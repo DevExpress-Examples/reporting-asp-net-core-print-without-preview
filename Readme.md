@@ -1,8 +1,8 @@
-## How to Print and Export a Report in the  ASP.NET Core Application without the Document Viewer
+# How to Print and Export a Report in the  ASP.NET Core Application without the Document Viewer
 
 This example prints and exports a report in a browser without previewing it on a web page with a Document Viewer.
 
-**Print**
+## Print
 
 On the **server side**, a controller performs the following actions:
 - [creates a report](https://docs.devexpress.com/XtraReports/2440/get-started-with-devexpress-reporting/create-a-report-from-a-to-z);
@@ -17,11 +17,10 @@ Click a button to call the client-side `window.Open(url, "_blank")` method to op
 * Print a report in iFrame. 
 Click a button to load a PDF file in the `HTMLIFrameElement` and print its content.
 
-*NOTE: We don't recommend printing with an invisible iFrame element because not all browsers support it.* 
+*NOTE: Printing with an invisible iFrame element is not recommended because not all browsers support it.* 
 
-**Export**
+## Export
 
 The user selects the format and clicks a button to send the format to the server-side controller. The controller calls the export method for the selected format and sends the file back to the browser.
 
-For more information review the following help topic:
-*  [Export Reports](https://docs.devexpress.com/XtraReports/1302/detailed-guide-to-devexpress-reporting/store-and-distribute-reports/export-reports).
+For more information review the following help topic: [Export Reports](https://docs.devexpress.com/XtraReports/1302/detailed-guide-to-devexpress-reporting/store-and-distribute-reports/export-reports).
