@@ -1,0 +1,6 @@
+{
+	"AutoGenerateVb" : false,
+	"Topics" : ["netcore", "export", "print", "pdf", "reporting"],
+	"Description": "Prints and exports a report in a browser without the Document Viewer."
+
+}
