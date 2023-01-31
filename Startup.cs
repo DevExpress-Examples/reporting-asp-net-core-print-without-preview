@@ -22,9 +22,7 @@ namespace ReportingAspNetCorePrintWithoutPreview
             services.AddDevExpressControls();
             services
                 .AddMvc()
-                .AddDefaultReportingControllers()
-                .AddNewtonsoftJson()
-                .SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_3_0);
+                .AddNewtonsoftJson();
             services.ConfigureReportingServices(configurator => {
                 configurator.ConfigureReportDesigner(designerConfigurator => {
                     designerConfigurator.RegisterDataSourceWizardConfigFileConnectionStringsProvider();
