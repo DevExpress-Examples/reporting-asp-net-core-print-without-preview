@@ -19,28 +19,13 @@ namespace ReportingAspNetCorePrintWithoutPreview
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services) {
-            services.AddDevExpressControls();
             services
                 .AddMvc()
                 .AddNewtonsoftJson();
-            services.ConfigureReportingServices(configurator => {
-                configurator.ConfigureReportDesigner(designerConfigurator => {
-                    designerConfigurator.RegisterDataSourceWizardConfigFileConnectionStringsProvider();
-                });
-                configurator.ConfigureWebDocumentViewer(viewerConfigurator => {
-                    viewerConfigurator.UseCachedReportSourceBuilder();
-                });
-            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory) {
-            var reportingLogger = loggerFactory.CreateLogger("DXReporting");
-            DevExpress.XtraReports.Web.ClientControls.LoggerService.Initialize((exception, message) => {
-                var logMessage = $"[{DateTime.Now}]: Exception occurred. Message: '{message}'. Exception Details:\r\n{exception}";
-                reportingLogger.LogError(logMessage);
-            });
-            app.UseDevExpressControls();
             System.Net.ServicePointManager.SecurityProtocol |= System.Net.SecurityProtocolType.Tls12;
             if(env.IsDevelopment()) {
                 app.UseDeveloperExceptionPage();

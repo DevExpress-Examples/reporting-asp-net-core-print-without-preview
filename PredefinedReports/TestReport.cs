@@ -1,19 +1,13 @@
 using System;
+using System.Collections;
+using System.ComponentModel;
 using System.Drawing;
 using DevExpress.XtraReports.UI;
 
-namespace ReportingAspNetCorePrintWithoutPreview.PredefinedReports
-{
-    public partial class TestReport
-    {
-        public TestReport()
-        {
+namespace ReportingAspNetCorePrintWithoutPreview.PredefinedReports {
+    public partial class TestReport : DevExpress.XtraReports.UI.XtraReport {
+        public TestReport() {
             InitializeComponent();
-        }
-
-        private void tableCell4_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)
-        {
-            (sender as XRTableCell).Text += " Customized";
         }
     }
 }

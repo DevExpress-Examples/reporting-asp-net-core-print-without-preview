@@ -1,8 +1,3 @@
-<!-- default badges list -->
-![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/343264953/2022.2)
-[![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T977689)
-[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
-<!-- default badges end -->
 ## How to Print and Export a Report in the  ASP.NET Core Application without the Document Viewer
 
 This example prints and exports a report in a browser without previewing it on a web page with a Document Viewer.
@@ -21,8 +16,6 @@ Click a button to call the client-side `window.Open(url, "_blank")` method to op
 
 * Print a report in iFrame. 
 Click a button to load a PDF file in the `HTMLIFrameElement` and print its content.
-
-*NOTE: We don't recommend printing with an invisible iFrame element because not all browsers support it.* 
 
 **Export**
 
