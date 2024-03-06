@@ -3,7 +3,7 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T977689)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-## How to Print and Export a Report in the  ASP.NET Core Application without the Document Viewer
+## Reporting for ASP.NET Core - How to Print and Export a Report without the Document Viewer
 
 This example prints and exports a report in a browser without previewing it on a web page with a Document Viewer.
 
