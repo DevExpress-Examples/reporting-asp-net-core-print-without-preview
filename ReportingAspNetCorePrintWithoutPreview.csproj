@@ -41,7 +41,7 @@
     <Exec Command="npm install" />
   </Target>
   <ItemGroup>
-    <PackageReference Include="DevExpress.Reporting.Core" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Reporting.Core" Version="23.2.*-*" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.18" />
     <PackageReference Include="System.Data.SQLite" Version="1.0.109.2" />
   </ItemGroup>
