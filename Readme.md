@@ -27,8 +27,8 @@ The user selects the format and clicks a button to send the format to the server
 
 ## Files to Review
 
-- [Index.cshtml](./Views/Home/Index.cshtml)
-- [ExportController.cs](./Controllers/ExportController.cs)
+- [Index.cshtml](./CS/Views/Home/Index.cshtml)
+- [ExportController.cs](./CS/Controllers/ExportController.cs)
 
 ## Documentation
 
